@@ -9,5 +9,5 @@ class FbxSerializer(serializers.ModelSerializer):
         """Meta class to map serializer's fields with the model fields."""
         depth 	= 1
         model = Fbx
-        fields = ('id','name','normals','bump', 'texture', 'status')
+        fields = ('id','name', 'fbx', 'normals','bump', 'texture', 'status')
         read_only_fields = ('id','name','normals','bump', 'texture', 'status')
