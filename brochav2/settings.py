@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
 
     'fbx.apps.FbxConfig'
@@ -73,6 +74,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'brochav2.wsgi.application'
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Database
