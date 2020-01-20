@@ -25,9 +25,7 @@ SECRET_KEY = '9pelhgwk67lk6j0rgl1a5%1bu^z(^nmirj68cf_dkw(6$784sr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-  '13.232.247.131'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-
     'fbx.apps.FbxConfig'
 ]
 
@@ -128,7 +125,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,STATIC_ROOT,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 #STATIC_URL = '/static/'
 
